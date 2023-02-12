@@ -8,16 +8,14 @@
 
     --fs: 15px;
     
-    --ff-accent-700: 'Big Shoulders Display', cursive;
+    --ff-accent-700: 'Big Shoulders Display', 'cursive';
     --ff-accent-400: 'Lexend Deca', sans-serif;
     
     --fw-regular: 400;
     --fw-bold: 700
 }
-
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    word-spacing: 4.2px;
   }
   p{
     font-size: var(--fs);
@@ -27,6 +25,7 @@
     opacity: 0.7;
     line-height: 24px;
     margin-bottom: 4rem;
+    width: 13rem;
   }
   h1{
     text-transform: uppercase;
@@ -42,25 +41,25 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 95vh;
+  
 }  
 .product{
   border-radius: 0.5rem;
   overflow: hidden;
+  max-width: min-content;
 }
 .sedans-product{
   padding: 3rem;
   background-color: var(--crl-Primary-Bright-orange);
-  aspect-ratio: 3/4;
 }
 .suvs-product{
   padding: 3rem;
   background-color: var(--crl-Primary-Dark-cyan);
-  aspect-ratio: 3/4;
 }
 .luxury-product{
   padding: 3rem;
   background-color: var(--crl-Primary-Very-dark-cyan);
-  aspect-ratio: 3/4;
 }
 .btn{
   border: none;
